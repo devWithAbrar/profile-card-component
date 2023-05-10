@@ -1,0 +1,110 @@
+/*==================== Importing font from Google Fonts ====================*/
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+/*==================== Declearing all root Variables ====================*/
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+    
+    --text-size: 20px;
+    
+    --text-weight-1: 400;
+    --text-weight-2: 700;
+}
+
+/*==================== Reseting all default styling ====================*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    background-color: var(--dark-cyan);
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: top -400px left -400px, bottom -350px right -350px;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.card {
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.top-pattern{
+    width: 100%;
+    height: 120px;
+    background-image: url(../images/bg-pattern-card.svg);
+}
+
+.profile-image {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-image img {
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-top: -50px;
+}
+
+.middle-part {
+    text-align: center;
+}
+
+.middle-part h1 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: var(--very-dark-desaturated-blue) ;
+    font-size: var(--text-size);
+}
+
+.middle-part h1 span {
+    margin-left: 5px;
+    font-weight: var(--text-weight-1);
+    color: var(--dark-grayish-blue);
+}
+
+.middle-part p {
+    margin-bottom: 25px;
+    color: var(--dark-grayish-blue);
+}
+
+.bottom-part {
+    border-top: 2px solid rgb(207, 204, 204);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.bottom-part h1 {
+    font-size: var(--text-size);
+    color: var(--very-dark-desaturated-blue);
+}
+
+.bottom-part p {
+    color: var(--Dark-gray);
+}
