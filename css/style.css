@@ -50,6 +50,11 @@ a {
     background-color: white;
     border-radius: 20px;
     overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
 }
 
 .top-pattern{
@@ -64,6 +69,7 @@ a {
 }
 
 .profile-image img {
+    width: 120px;
     border-radius: 50%;
     border: 5px solid white;
     margin-top: -50px;
